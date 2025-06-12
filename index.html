@@ -4,8 +4,19 @@
   <meta charset="UTF-8">
   <title>Event Video</title>
   <style>
-    body { margin: 0; background: black; }
-    video { width: 100vw; height: 100vh; object-fit: cover; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+    video {
+      height: 100%;
+      width: 100%;
+      object-fit: contain; /* or try 'cover' for fullscreen crop vibe */
+    }
   </style>
 </head>
 <body>
